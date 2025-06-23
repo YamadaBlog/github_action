@@ -1,1 +1,14 @@
-# Le fichier YAML est à compléter
+name: CI
+
+on:
+  push:
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupération du code source via une action Github existante
+        uses: actions/checkout@v3
+
+      - name: Dit bonjour
+        run: echo "Hello Elioris world"
