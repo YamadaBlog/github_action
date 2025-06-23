@@ -19,5 +19,11 @@ jobs:
       - name: Lint code
         run: npm run lint
 
+      - name: Génération d'artifact dans dist/ avec action upload-artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: dist/
+
       - name: Dit bonjour
         run: echo "Hello Elioris world"
