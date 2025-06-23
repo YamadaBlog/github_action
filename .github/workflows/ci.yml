@@ -10,5 +10,8 @@ jobs:
       - name: Récupération du code source via une action Github existante
         uses: actions/checkout@v3
 
+      - name: Installer les dep
+        run: npm ci
+
       - name: Dit bonjour
         run: echo "Hello Elioris world"
