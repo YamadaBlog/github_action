@@ -13,5 +13,8 @@ jobs:
       - name: Installer les dep
         run: npm ci
 
+      - name: Lance les tests
+        run: npm test
+
       - name: Dit bonjour
         run: echo "Hello Elioris world"
